@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --leckerli-one: 'Leckerli One', cursive;
+    --baloo-2: 'Baloo 2', sans-serif;
+    --open-sans: 'Open Sans' sans-serif;
+
+    --logo: 400 2.5rem/1.0 var(--leckerli-one);
+    --heading-md: 700 1.75rem/1.0 var(--baloo-2);
+    --heading-sm: 700 1.125rem/1.0 var(--baloo-2);
+    --body-md: 500 1rem/1.0 var(--open-sans);
+    --body-sm: 500 .875rem/1.0 var(--open-sans); 
+    --body-xs: 500 .75rem/1.0 var(--open-sans);
+
+}
+
+p {
+    font: var(--logo);
+}
