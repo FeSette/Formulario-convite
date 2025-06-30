@@ -1,0 +1,36 @@
+#app {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "äside" "main";
+    gap: 1.25rem;
+}
+
+.aside-container {
+    background: url(../assets/image/Background.png) no-repeat center/cover;
+    border-radius: .75rem;
+    height: 45.5rem;
+    margin: 1.25rem;
+
+    & .title {
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+
+    & h2 {
+        font: var(--logo);
+        color: var(--pink);
+        margin-top: 1rem;
+    }
+
+    & p {
+        font: var(--body-md);
+        color: var(--text-body);
+        margin-top: 1rem;
+    }
+
+    & img {
+        height: 3rem;
+        width: 2.86rem;
+        
+    }
+}
