@@ -1,0 +1,17 @@
+.text-heading {
+    font: var(--heading-sm);
+    color: var(--text-heading);
+}
+
+/* .text-body{
+    font: var();
+    color: var(--text-body);
+} */
+
+.gap-16{
+  gap: 1rem;
+}
+
+.mb-12{
+  margin-bottom: .75rem;
+}

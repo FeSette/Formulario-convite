@@ -1,0 +1,111 @@
+input {
+    height: 3rem;
+    font: var(--body-md);
+    font-weight: 400;
+
+    &[required] + #error {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        color: var(--danger);
+
+        margin-top: .5rem;
+    }
+
+    &:invalid, &:invalid:focus {
+        border-color: var(--danger);
+        outline: var(--danger);
+    }
+
+    &:valid + #error {
+        display: none;
+    }
+}
+
+.default-input {
+    background-color: var(--input-base);
+    color: var(--text-heading);
+    border: .0625rem solid var(--input-stroke);
+    border-radius: .5rem;
+
+    &:active, &:focus {
+        outline: .0625rem solid var(--brand-light);
+        border-color: var(--brand-light);
+    }
+}
+
+.input-padding {
+    padding: .8125rem 1rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+input[type="datetime-local"] {
+    color: var(--input-placeholder);
+    text-transform: uppercase;
+    font: var(--body-md);
+    font-weight: 400;
+
+    &::-webkit-calendar-picker-indicator {
+        opacity: 0;
+    }
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.radio-wrapper-type {
+    display: flex;
+    gap: .25rem;
+
+    height: 3rem;
+    overflow: hidden;
+    padding: .25rem;
+
+    &:active {
+        outline: 0;
+        border-color: var(--input-stroke);
+    }
+
+    & label {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    .radio-content-type {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        flex: 1;
+
+        position: relative;
+        border-radius: .3125rem;
+
+        &:has(:checked), &:has(:focus), &:has(:hover){
+            background-color: var(--shape-button);
+        }
+
+        &:has(:checked) {
+
+            & #in-person {
+                background-image: url(../../assets/icon/in-person-checked.svg);
+            }
+
+            & #online {
+                background-image: url(../../assets/icon/online-checked.svg);
+            }
+        }
+    }
+}

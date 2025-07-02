@@ -22,7 +22,52 @@
             <div class="main-container">
                 <div class="invite">
                     <h2>crie o seu convite</h2>
+                    <form class="form" method="post" enctype="multipart/form-data">
+                        <fieldset class="event-info">
+                            <legend class="legend text-heading">
+                                <img src="assets/icon/calendar.svg" alt="ïcone de calendário">
+                                Sobre o evento
+                            </legend>
+                            
+                            <div class="form-container gap-16">
 
+                                <div class="input-group">
+                                    <label class="default-label mb-12" for="title">Título</label>
+                                    <input class="default-input input-padding" type="text" name="title" id="title" placeholder="Nome do evento">
+                                </div>
+
+                                <div class="input-wrapper">
+                                    <div class="input-group">
+                                        <label class="default-label mb-12" for="start">Início</label>
+                                        <input class="default-input input-padding" type="datetime-local" id="start">
+                                    </div>
+                                    <div class="input-group">
+                                        <label class="default-label mb-12" for="end">Fim</label>
+                                        <input class="default-input input-padding" type="datetime-local">
+                                    </div>
+                                </div>
+
+                                <div class="input-wrapper">
+                                    <div class="input-group">
+                                        <label class="default-label mb-12">Tipo</label>
+
+                                        <div class="radio-wrapper-type default-input">
+                                            <div class="radio-content-type">
+                                                <input type="radio" name="type" id="in-person" value="in-person">
+                                                <label class="default-label" for="in-person"><img id="in-person" src="assets/icon/in-person.svg" alt="ïcone de prédio empresarial">Presencial</label>
+                                            </div>
+                                            <div class="radio-content-type">
+                                                <input type="radio" name="type" id="online" value="online">
+                                                <label class="default-label" for="online"><img id="online" src="assets/icon/online.svg" alt="ïcone de webcam">Online</label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
         </main>

@@ -1,0 +1,30 @@
+@import url(../forms/input.css);
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem
+}
+
+fieldset {
+    border: none;
+}
+
+.legend {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+
+    margin-bottom: 1.5rem;
+}
+
+label {
+    font: var(--body-sm);
+    color: var(--text-body);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
