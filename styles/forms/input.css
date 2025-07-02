@@ -109,3 +109,12 @@ input[type="radio"] {
         }
     }
 }
+
+textarea {
+    min-width: 100%;
+    max-width: 35rem;
+    min-height: 8.5rem;
+
+    font: var(--body-md);
+    padding: 1rem;
+}
