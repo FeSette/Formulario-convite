@@ -60,9 +60,7 @@ input[type="datetime-local"] {
     }
 }
 
-input[type="radio"] {
-    display: none;
-}
+
 
 .radio-wrapper-type {
     display: flex;
@@ -71,6 +69,10 @@ input[type="radio"] {
     height: 3rem;
     overflow: hidden;
     padding: .25rem;
+
+    & input[type="radio"]{
+        appearance: none;
+    }
 
     &:active {
         outline: 0;
@@ -117,4 +119,39 @@ textarea {
 
     font: var(--body-md);
     padding: 1rem;
+}
+
+
+
+#personalization {
+    grid-template-columns: 1fr 2fr;
+}
+
+.radio-wrapper-color {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+
+    & input[type="radio"]{
+    all: unset;
+    outline: none;
+    cursor: pointer;
+
+    position: absolute;
+    inset: 0;
+    }
+
+    & .radio-content-color {
+        border-radius: 50%;
+        border: .25rem solid var(--shape-button);
+        outline: .125rem solid var(--shape-button);
+
+        width: 2.5rem;
+        height: 2.5rem;
+        position: relative;
+
+        &:has(:checked), &:has(:focus), &:has(:hover) {
+            outline-color: var(--brand-light);
+        }
+    }
 }

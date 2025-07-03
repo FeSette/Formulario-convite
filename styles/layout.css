@@ -7,10 +7,11 @@
     overflow: hidden;
 }
 
-.aside-container {
+aside {
     background: url(../assets/image/Background.png) no-repeat center/cover;
     border-radius: .75rem;
     height: 45.5rem;
+    width: auto;
     padding: 2rem;
 
     grid-area: aside;
@@ -32,18 +33,24 @@
 
     & img {
         height: 3rem;
-        width: 2.86rem;
-        
+        width: 2.86rem;        
     }
+
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
 }
 
 .main-container {
+    overflow: auto;
     background-color: var(--shape-body);
     width: 100%;
     border-radius: .75rem;
 
     grid-area: main;
-    padding-block: 5rem;
+    padding: 5rem;
 
     & .invite {
         max-width: 35rem;

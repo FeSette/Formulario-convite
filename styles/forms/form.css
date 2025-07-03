@@ -23,6 +23,11 @@ label {
     color: var(--text-body);
 }
 
+.default-label {
+    font-size: .875rem;
+    font-weight: 400;
+}
+
 .form-container {
     display: flex;
     flex-direction: column;
