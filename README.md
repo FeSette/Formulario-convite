@@ -6,7 +6,7 @@
 
 > Formação Full-Stack: [Nível 4] Avançando no HTML e CSS (Desafio Prático)
 
-O site desenvolvido é um portfólio para desenvolvedores, com o intuito de mostrar os projetos desenvolvidos e o contato profissional.
+O projeto desenvolvido é um site desktop de covite para eventos, com formulário para geração do convite personalizado! 
 
 [🔗 Veja o projeto](https://fesette.github.io/Formulario-convite/)
 
