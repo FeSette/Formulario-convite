@@ -2,7 +2,7 @@
 
 🚀 Um repositório destinado para o desafio prático Formulário de Convite | Festivite, da jornada do curso **Full-Stack** da Rocketseat, ministrado pelo Mayk Brito. ⚒
 
-![preview](./assets/Preview.png)
+![preview](./assets/preview.png)
 
 > Formação Full-Stack: [Nível 4] Avançando no HTML e CSS (Desafio Prático)
 
