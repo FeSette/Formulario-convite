@@ -23,6 +23,10 @@
   margin-bottom: 1.75rem;
 }
 
+.mb-32 {
+  margin-bottom: 2rem;
+}
+
 .brand-light {
   background-color: var(--brand-light);
 }
