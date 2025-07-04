@@ -354,3 +354,26 @@ textarea {
         }
     }
 }
+
+.submit {
+    display: block;
+    margin: 3rem 0 0 auto;
+    padding: .8125rem 1.25rem;
+
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+
+    background-color: var(--brand-dark);
+    border-radius: .5rem;
+    color: var(--text-heading);
+    cursor: pointer;
+
+    height: 3rem;
+    font: var(--body-md);
+
+    &:hover, &:focus {
+        outline: .125rem solid var(--text-heading);
+        background-color: var(--brand-mid);
+    }
+}

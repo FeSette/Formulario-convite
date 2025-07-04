@@ -10,12 +10,13 @@
 aside {
     background: url(../assets/image/Background.png) no-repeat center/cover;
     border-radius: .75rem;
-    height: 45.5rem;
+    min-height: 45.5rem;
+    max-height: 50rem;
     width: auto;
     padding: 2rem;
 
     grid-area: aside;
-    position: sticky;
+    position: static;
 
     & h2 {
         display: block;
